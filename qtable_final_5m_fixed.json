@@ -1,0 +1,55 @@
+{
+  "states": [
+    "L",
+    "M",
+    "R"
+  ],
+  "actions": [
+    "D",
+    "U",
+    "I"
+  ],
+  "final_stage_deadband_m": 5.0,
+  "final_stage_e_expected_m": 5.0,
+  "Q": {
+    "L": {
+      "D": 385.72,
+      "U": 192.45,
+      "I": 67.31
+    },
+    "M": {
+      "D": 128.64,
+      "U": 497.10,
+      "I": 341.88
+    },
+    "R": {
+      "D": 371.49,
+      "U": 185.26,
+      "I": 58.93
+    }
+  },
+  "report_summary": {
+    "curriculum": [
+      [
+        20.0,
+        40.0
+      ],
+      [
+        10.0,
+        20.0
+      ],
+      [
+        5.0,
+        5.0
+      ]
+    ],
+    "alpha": 0.01,
+    "gamma": 0.8,
+    "tol": 0.0001,
+    "patience": 30,
+    "min_epochs": 100,
+    "max_epochs": 5000,
+    "min_ratio": 0.7,
+    "reward_on": "next"
+  }
+}
